@@ -7,5 +7,15 @@ String func(String s) {
         str: answer
     """;
   //your code here
-  return '';
+  int n = s.length;
+   int i = n - 1;
+   String x = "";
+   while (i < n && i >= 0){
+      x += s[i];
+      i --;
+   }
+   return x;
+}
+void main(){
+  print(func('codeschool'));
 }
